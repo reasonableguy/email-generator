@@ -1,0 +1,77 @@
+<container class="footer-top style-{{site}}">
+	<spacer size="16"></spacer>
+	<row>
+		<columns>
+			<center>
+				<menu class="footer-social text-center">
+					{{#ifequal site 'sdc' }}
+						<item href="https://www.facebook.com/shoesdotcom"><img src="http://s.onlineshoes.com/emails/sdc/email-facebook-icon.png"/></item>
+						<item href="https://twitter.com/ShoesDotCom"><img src="http://s.onlineshoes.com/emails/sdc/email-twitter-icon.png"/></item>
+						<item href="https://www.instagram.com/ShoesDotCom"><img src="http://s.onlineshoes.com/emails/sdc/email-instagram-icon.png"/></item>
+					{{/ifequal}}
+					{{#ifequal site 'ols' }}
+						<item href="https://www.facebook.com/Onlineshoescom"><img src="http://s.onlineshoes.com/emails/ols/email-facebook-icon.png"/></item>
+						<item href="https://twitter.com/onlineshoes_com"><img src="http://s.onlineshoes.com/emails/ols/email-twitter-icon.png"/></item>
+						<item href="https://www.instagram.com/onlineshoes_com"><img src="http://s.onlineshoes.com/emails/ols/email-instagram-icon.png"/></item>
+					{{/ifequal}}
+					{{#ifequal site 'sme' }}
+						<item href="https://www.facebook.com/SHOEmeca"><img src="http://s.onlineshoes.com/emails/sm/email-facebook-icon.png"/></item>
+						<item href="https://twitter.com/shoemeca"><img src="http://s.onlineshoes.com/emails/sm/email-twitter-icon.png"/></item>
+						<item href="https://www.instagram.com/shoemeca/"><img src="http://s.onlineshoes.com/emails/sm/email-instagram-icon.png"/></item>
+					{{/ifequal}}
+				</menu>
+			</center>
+		</columns>
+	</row>
+	<row>
+		<columns>
+			<center>
+				<menu class="footer-utils text-center">
+					{{#ifequal site 'sdc' }}
+						<item href="http://www.shoes.com/info/contact">Customer Service</item>
+						<item>|</item>
+						<item href="http://www.shoes.com/OrderInfo">Order Tracking</item>
+					{{/ifequal}}
+					{{#ifequal site 'ols' }}
+						<item href="http://www.onlineshoes.com/info/contact">Customer Service</item>
+						<item>|</item>
+						<item href="http://www.onlineshoes.com/OrderInfo">Order Tracking</item>
+					{{/ifequal}}
+					{{#ifequal site 'sme' }}
+						<item href="http://www.shoeme.ca/pages/style-and-care">Free Shipping Over $99</item>
+						<item>|</item>
+						<item href="http://www.shoeme.ca/pages/style-and-care">Free Returns</item>
+						<item class="show-for-large">|</item>
+						<item class="show-for-large" href="http://www.shoeme.ca/pages/style-and-care">Free Exchanges</item>
+					{{/ifequal}}
+				</menu>
+			</center>
+		</columns>
+	</row>
+</container>
+<container class="footer-bottom style-{{site}}">
+	<row>
+		<columns>
+			<spacer size="16"></spacer>
+			{{#if footer-disclaimer }}
+				<p class="text-center">{{footer-disclaimer}}</p>
+			{{/if}}
+			{{#ifequal site 'sdc' }}
+				<p class="text-center">Questions? Please email <a  href="mailto:customercare@shoes.com">customercare@shoes.com</a>. We're happy to help!</p>
+				<p class="text-center">This email was sent to %%emailaddr%%. If you no longer wish to receive these emails, you can <a href="http://www.shoes.com/emailpreferences?email=%%emailaddr%%">unsubscribe</a> now.
+				<p class="text-center">Shoes.com | 221 Yale Ave N, Suite 350 | Seattle, WA 98109 | 1-888-233-6743</p>
+			{{/ifequal}}
+			{{#ifequal site 'ols' }}
+				<p class="text-center">Questions? Please email <a  href="mailto:customerservice@onlineshoes.com">customerservice@onlineshoes.com</a>. We're happy to help!</p>
+				<p class="text-center">This email was sent to %%emailaddr%%. If you no longer wish to receive these emails, you can <a href="http://www.onlineshoes.com/emailpreferences?email=%%emailaddr%%">unsubscribe</a> now.
+				<p class="text-center">OnlineShoes.com | 221 Yale Ave N, Suite 350 | Seattle, WA 98109 | 1-800-786-3141</p>
+			{{/ifequal}}
+			{{#ifequal site 'sme' }}
+				<p class="text-center">Questions? Please email <a  href="mailto:styleandcare@shoeme.ca">styleandcare@shoeme.ca</a>. We're happy to help!</p>
+				<p class="text-center">This email was sent to %%emailaddr%%. If you no longer wish to receive these emails, you can <a href="http://shoeme.us4.list-manage2.com/unsubscribe?u=ca0ed50be5e95eb8242648c30&id=14d80629dc&e=f52547fffe&c=9e50197752">unsubscribe</a> now.
+				<p class="text-center">SHOEme.ca | 1-866-440-7948</p>
+			{{/ifequal}}
+		</columns>
+	</row>
+</container>
+

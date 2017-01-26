@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/highlight-github.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Email Generator</title>
+	</head>
+	<body>
+		<div class="email-header row expanded">
+			<div class="small-12 columns">
+				<img src="/assets/img/logo.png"/>
+				<h1>Email Generator</h1>
+			</div>
+		</div>
+		<div class="email-body row expanded">
+			<div class="email-input small-3 columns">
+				<h5>Input:</h5>
+				<form id="email-form">
+					<!-- Submit -->
+					<div class="email-input-submit">
+						<input type="submit" class="button small" value="Generate Email">
+						<img src="assets/img/loader.svg" />
+					</div>
+					
+					<!-- Emails -->
+					<fieldset class="fieldset">
+						<legend>Emails:</legend>
+							<select name="selected-version" class="emailFormDropdown"></select>
+					</fieldset>
+
+					<!-- Site -->
+					<fieldset class="fieldset">
+						<legend>Site:</legend>
+							<input name="site" type="radio" value="sdc" id="site-sdc" checked><label for="site-sdc">SDC</label>
+							<input name="site" type="radio" value="ols" id="site-ols"><label for="site-ols">OLS</label>
+							<input name="site" type="radio" value="sme" id="site-sme"><label for="site-sme">SME</label>
+					</fieldset>
+
+					<fieldset class="fieldset">
+						<legend>Pre-Heaer Section</legend>
+							<input name="preheader-copy" type="text" placeholder="preheader-copy">
+							<input name="preheader-cta-url" type="text" placeholder="preheader-cta-url">
+							<input name="preheader-cta-copy" type="text" placeholder="preheader-cta-copy">
+					</fieldset>
+					<fieldset class="fieldset">
+						<legend>Hero Section</legend>
+							<input name="hero-image" type="text" placeholder="hero-image" aria-describedby="heroImageText">
+							<p class="help-text" id="heroImageText">Max Width is 600px.</p>
+							<input name="hero-url" type="text" placeholder="hero-url">
+							<input name="hero-alt" type="text" placeholder="hero-alt">
+							<legend>Hero CTA Number:</legend>
+								<input name="hero-cta-number" type="radio" value="1" id="hero-cta-number-1"><label for="hero-cta-number-1">1</label>
+								<input name="hero-cta-number" type="radio" value="2" id="hero-cta-number-2" checked><label for="hero-cta-number-2">2</label>
+								<input name="hero-cta-number" type="radio" value="4" id="hero-cta-number-4"><label for="hero-cta-number-4">4</label>
+							<legend>Hero CTA Style:</legend>
+								<input name="hero-cta-style" type="radio" value="primary" id="" checked><label for="">Primary</label>
+								<input name="hero-cta-style" type="radio" value="secondary" id=""><label for="">Secondary</label>
+							
+							<label>Hero CTA's:</label>
+							<div class="hero-ctas"></div>
+					</fieldset>
+					<fieldset class="fieldset">
+						<legend>Content Section</legend>
+							<input name="content-skus-heading" type="text" placeholder="content-heading" aria-describedby="contentHeadingText">
+							<p class="help-text" id="contentHeadingText">Optional</p>
+							<input name="content-skus-heading-url" type="text" placeholder="content-url" aria-describedby="contentHeadingURL">
+							<p class="help-text" id="contentHeadingURL">Optional</p>
+							<label>Total Skus:
+								<select class="sku-total" name="content-total-skus">
+									<option value="4">4</option>
+									<option value="6">6</option>
+									<option value="8">8</option>
+								</select>
+							</label>
+							<!-- SKUS -->
+							<div class="content-skus"></div>
+					</fieldset>
+
+					<!-- Content Block -->
+					<fieldset class="fieldset">
+						<legend>Content Block:</legend>
+							<label>Optional:</label>
+							<input name="content-block-href" type="text" placeholder="content-block-href">
+							<input name="content-block-image" type="text" placeholder="content-block-image">
+							<input name="content-block-alt" type="text" placeholder="content-block-alt">
+					</fieldset>
+
+					<!-- Footer -->
+					<fieldset class="fieldset">
+						<legend>Footer Section</legend>
+							<input name="footer-disclaimer" type="text" placeholder="footer-disclaimer" aria-describedby="footerDisclaimerText">
+							<p class="help-text" id="footerDisclaimerText">Optional</p>
+					</fieldset>
+
+					<!-- Submit -->
+					<div class="text-right">
+						<input type="submit" class="button small" value="Generate Email">
+					</div>
+
+				</form>
+			</div>
+			<div class="email-preview small-6 columns">
+				<h5>Preview:</h5>
+				<ul class="tabs" data-tabs id="preview-tab">
+					<li class="tabs-title is-active"><a href="#desktop-preview" aria-selected="true">Desktop</a></li>
+					<li class="tabs-title"><a href="#desktop-preview">Mobile</a></li>
+				</ul>
+				<div class="tabs-content" data-tabs-content="preview-tab">
+					<div class="tabs-panel is-active" id="desktop-preview">
+						<iframe id="desktopIframe" width="650" height="1400" src="/sdc.html" allowfullscreen style="border:0"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="email-output small-3 columns">
+				<h5>Output:</h5>
+				<a class="small button" href="#" data-clipboard-target="#code-output">Copy to Clipboard</a>
+				<pre>
+					<code id="code-output" class="html"></code>
+				</pre>
+			</div>
+		</div>
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/what-input.js"></script>
+		<script src="assets/js/foundation.js"></script>
+		<script src="assets/js/highlight.pack.js"></script>
+		<script src="assets/js/clipboard.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>

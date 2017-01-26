@@ -1,0 +1,144 @@
+<container class="content-skus style-{{site}}">
+	{{#if content-skus-heading }}
+		<row class="heading">
+			<columns>
+				<h2 class="text-center"><a href="{{content-skus-heading-url}}">{{content-skus-heading}}</a></h2>
+			</columns>
+		</row>
+	{{/if}}
+
+	<row class="collapse">
+		<columns large="6" small="12">
+			<center>
+				<a href="{{content-skus-1-href}}">
+					<img width="300" src="{{content-skus-1-image}}"/>
+				</a>
+			</center>
+			<h5 class="text-center">{{content-skus-1-gender}} {{content-skus-1-brand}}</h5>
+			<h3 class="text-center">{{content-skus-1-title}}</h3>
+			<h4 class="text-center{{#if content-skus-1-compare-at-price }} sale{{/if}}">{{content-skus-1-price}}{{#if content-skus-1-compare-at-price }} <span>${{content-skus-1-compare-at-price}}</span>{{/if}}</h4>
+			<spacer size="5"></spacer>
+			<center><a href="{{content-skus-1-href}}">shop now</a></center>
+		</columns>
+		<columns large="6" small="12">
+			<center>
+				<a href="{{content-skus-2-href}}">
+					<img width="300" src="{{content-skus-2-image}}"/>
+				</a>
+			</center>
+			<h5 class="text-center">{{content-skus-2-gender}} {{content-skus-2-brand}}</h5>
+			<h3 class="text-center">{{content-skus-2-title}}</h3>
+			<h4 class="text-center{{#if content-skus-2-compare-at-price }} sale{{/if}}">{{content-skus-2-price}}{{#if content-skus-2-compare-at-price }} <span>${{content-skus-2-compare-at-price}}</span>{{/if}}</h4>
+			<spacer size="5"></spacer>
+			<center><a href="{{content-skus-2-href}}">shop now</a></center>
+		</columns>
+	</row>
+	<row class="collapse">
+		<columns large="6" small="12">
+			<center>
+				<a href="{{content-skus-3-href}}">
+					<img width="300" src="{{content-skus-3-image}}"/>
+				</a>
+			</center>
+			<h5 class="text-center">{{content-skus-3-gender}} {{content-skus-3-brand}}</h5>
+			<h3 class="text-center">{{content-skus-3-title}}</h3>
+			<h4 class="text-center{{#if content-skus-3-compare-at-price }} sale{{/if}}">{{content-skus-3-price}}{{#if content-skus-3-compare-at-price }} <span>${{content-skus-3-compare-at-price}}</span>{{/if}}</h4>
+			<spacer size="5"></spacer>
+			<center><a href="{{content-skus-3-href}}">shop now</a></center>
+		</columns>
+		<columns large="6" small="12">
+			<center>
+				<a href="{{content-skus-4-href}}">
+					<img width="300" src="{{content-skus-4-image}}"/>
+				</a>
+			</center>
+			<h5 class="text-center">{{content-skus-4-gender}} {{content-skus-4-brand}}</h5>
+			<h3 class="text-center">{{content-skus-4-title}}</h3>
+			<h4 class="text-center{{#if content-skus-4-compare-at-price }} sale{{/if}}">{{content-skus-4-price}}{{#if content-skus-4-compare-at-price }} <span>${{content-skus-4-compare-at-price}}</span>{{/if}}</h4>
+			<spacer size="5"></spacer>
+			<center><a href="{{content-skus-4-href}}">shop now</a></center>
+		</columns>
+	</row>
+	{{#ifequal content-total-skus 6 }}
+		<row class="collapse">
+			<columns large="6" small="12">
+				<center>
+					<a href="{{content-skus-5-href}}">
+						<img width="300" src="{{content-skus-5-image}}"/>
+					</a>
+				</center>
+				<h5 class="text-center">{{content-skus-5-gender}} {{content-skus-5-brand}}</h5>
+				<h3 class="text-center">{{content-skus-5-title}}</h3>
+				<h4 class="text-center{{#if content-skus-5-compare-at-price }} sale{{/if}}">{{content-skus-5-price}}{{#if content-skus-5-compare-at-price }} <span>${{content-skus-5-compare-at-price}}</span>{{/if}}</h4>
+				<spacer size="5"></spacer>
+				<center><a href="{{content-skus-5-href}}">shop now</a></center>
+			</columns>
+			<columns large="6" small="12">
+				<center>
+					<a href="{{content-skus-6-href}}">
+						<img width="300" src="{{content-skus-6-image}}"/>
+					</a>
+				</center>
+				<h5 class="text-center">{{content-skus-6-gender}} {{content-skus-6-brand}}</h5>
+				<h3 class="text-center">{{content-skus-6-title}}</h3>
+				<h4 class="text-center{{#if content-skus-6-compare-at-price }} sale{{/if}}">{{content-skus-6-price}}{{#if content-skus-6-compare-at-price }} <span>${{content-skus-6-compare-at-price}}</span>{{/if}}</h4>
+				<spacer size="5"></spacer>
+				<center><a href="{{content-skus-6-href}}">shop now</a></center>
+			</columns>
+		</row>
+	{{/ifequal}}
+	{{#ifequal content-total-skus 8 }}
+		<row class="collapse">
+			<columns large="6" small="12">
+				<center>
+					<a href="{{content-skus-5-href}}">
+						<img width="300" src="{{content-skus-5-image}}"/>
+					</a>
+				</center>
+				<h5 class="text-center">{{content-skus-5-gender}} {{content-skus-5-brand}}</h5>
+				<h3 class="text-center">{{content-skus-5-title}}</h3>
+				<h4 class="text-center{{#if content-skus-5-compare-at-price }} sale{{/if}}">{{content-skus-5-price}}{{#if content-skus-5-compare-at-price }} <span>${{content-skus-5-compare-at-price}}</span>{{/if}}</h4>
+				<spacer size="5"></spacer>
+				<center><a href="{{content-skus-5-href}}">shop now</a></center>
+			</columns>
+			<columns large="6" small="12">
+				<center>
+					<a href="{{content-skus-6-href}}">
+						<img width="300" src="{{content-skus-6-image}}"/>
+					</a>
+				</center>
+				<h5 class="text-center">{{content-skus-6-gender}} {{content-skus-6-brand}}</h5>
+				<h3 class="text-center">{{content-skus-6-title}}</h3>
+				<h4 class="text-center{{#if content-skus-6-compare-at-price }} sale{{/if}}">{{content-skus-6-price}}{{#if content-skus-6-compare-at-price }} <span>${{content-skus-6-compare-at-price}}</span>{{/if}}</h4>
+				<spacer size="5"></spacer>
+				<center><a href="{{content-skus-6-href}}">shop now</a></center>
+			</columns>
+		</row>
+		<row class="collapse">
+			<columns large="6" small="12">
+				<center>
+					<a href="{{content-skus-7-href}}">
+						<img width="300" src="{{content-skus-7-image}}"/>
+					</a>
+				</center>
+				<h5 class="text-center">{{content-skus-7-gender}} {{content-skus-7-brand}}</h5>
+				<h3 class="text-center">{{content-skus-7-title}}</h3>
+				<h4 class="text-center{{#if content-skus-7-compare-at-price }} sale{{/if}}">{{content-skus-7-price}}{{#if content-skus-7-compare-at-price }} <span>${{content-skus-7-compare-at-price}}</span>{{/if}}</h4>
+				<spacer size="5"></spacer>
+				<center><a href="{{content-skus-7-href}}">shop now</a></center>
+			</columns>
+			<columns large="6" small="12">
+				<center>
+					<a href="{{content-skus-8-href}}">
+						<img width="300" src="{{content-skus-8-image}}"/>
+					</a>
+				</center>
+				<h5 class="text-center">{{content-skus-8-gender}} {{content-skus-8-brand}}</h5>
+				<h3 class="text-center">{{content-skus-8-title}}</h3>
+				<h4 class="text-center{{#if content-skus-8-compare-at-price }} sale{{/if}}">{{content-skus-8-price}}{{#if content-skus-8-compare-at-price }} <span>${{content-skus-8-compare-at-price}}</span>{{/if}}</h4>
+				<spacer size="5"></spacer>
+				<center><a href="{{content-skus-8-href}}">shop now</a></center>
+			</columns>
+		</row>
+	{{/ifequal}}
+</container>

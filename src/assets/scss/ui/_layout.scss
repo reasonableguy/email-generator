@@ -1,0 +1,40 @@
+body { background-color: #fafafa; }
+pre { overflow: hidden; }
+hr {
+	border-bottom: 2px solid #00b4e1;
+}
+code {
+	font-size: 12px;
+	height: 600px;
+	overflow: auto;
+	white-space: normal;
+}
+
+#desktop-preview, #mobile-preview { 
+	background-color: #eee;
+	text-align: center;
+}
+.email-output { 
+	.button { margin: 0; }
+}
+.fieldset legend { background-color: #fafafa; }
+
+.email-header {
+	background-color: #004365;
+	color: #fff;
+	padding: 5px 0;
+	margin-bottom: 20px;
+	img {
+		float: left;
+		width: 150px;
+	}
+	h1 { 
+		font-size: 18px;
+		float: left;
+		margin: 2px 0 0 10px;
+	}
+}
+.email-input-submit {
+	input { margin: 5px 0 0 0; }
+	img { display: none; }
+}

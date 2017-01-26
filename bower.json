@@ -1,0 +1,22 @@
+{
+  "name": "sdc-email-generator",
+  "description": "Basic template generator for the SDC email team.",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "SDC Web Team"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.2.4",
+    "clipboard": "^1.5.15"
+  }
+}

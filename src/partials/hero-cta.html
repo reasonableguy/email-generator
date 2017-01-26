@@ -1,0 +1,48 @@
+<container class="style-{{site}}">
+	<spacer size="16"></spacer>
+	<row>
+		{{#ifequal hero-cta-number 1 }}
+			<columns small="12">
+				<center>
+					<button class="expanded {{hero-cta-style}}" href="{{hero-cta-1-url}}">{{hero-cta-1-copy}}</button>
+				</center>
+			</columns>
+		{{/ifequal}}
+
+		{{#ifequal hero-cta-number 2 }}
+			<columns small="6">
+				<center>
+					<button class="expanded {{hero-cta-style}}" href="{{hero-cta-1-url}}">{{hero-cta-1-copy}}</button>
+				</center>
+			</columns>
+			<columns small="6">
+				<center>
+					<button class="expanded {{hero-cta-style}}" href="{{hero-cta-2-url}}">{{hero-cta-2-copy}}</button>
+				</center>
+			</columns>
+		{{/ifequal}}
+		
+		{{#ifequal hero-cta-number 4 }}
+			<columns small="6" large="3">
+				<center>
+					<button class="expanded {{hero-cta-style}}" href="{{hero-cta-1-url}}">{{hero-cta-1-copy}}</button>
+				</center>
+			</columns>
+			<columns small="6" large="3">
+				<center>
+					<button class="expanded {{hero-cta-style}}" href="{{hero-cta-2-url}}">{{hero-cta-2-copy}}</button>
+				</center>
+			</columns>
+			<columns small="6" large="3">
+				<center>
+					<button class="expanded {{hero-cta-style}}" href="{{hero-cta-3-url}}">{{hero-cta-3-copy}}</button>
+				</center>
+			</columns>
+			<columns small="6" large="3">
+				<center>
+					<button class="expanded {{hero-cta-style}}" href="{{hero-cta-4-url}}">{{hero-cta-4-copy}}</button>
+				</center>
+			</columns>
+		{{/ifequal}}
+	</row>
+</container>

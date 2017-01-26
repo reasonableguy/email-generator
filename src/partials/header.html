@@ -1,0 +1,88 @@
+<container class="header style-{{site}}">
+	<spacer size="16"></spacer>
+	<row>
+		<columns class="header-preheader">
+			<p class="text-center">{{preheader-copy}} <a href="{{preheader-cta-url}}">{{preheader-cta-copy}}</a> | <a href="%%view_email_url%%">View in Browser</a></p>
+		</columns>
+	</row>
+	<hr/>
+	<spacer class="show-for-large" size="16"></spacer>
+	{{#ifequal site 'sdc' }}
+		<row>
+			<columns small="12" class="header-logo">
+				<center>
+					<a href="http://shoes.com">
+						<img alt="SHOES.com" src="http://s.onlineshoes.com/emails/sdc/email-header-sdc-logo_360.png"/>
+					</a>
+				</center>
+			</columns>
+		</row>
+		<spacer size="16"></spacer>
+		<row>
+			<columns small="12" class="header-sdcprops">
+				<p class="text-center"><span>Free</span> Shipping on orders over $49 | <span>Free</span> Exchanges | <span>100<em>s</em></span> of Brands</p>
+			</columns>
+		</row>
+	{{/ifequal}}
+	{{#ifequal site 'ols' }}
+		<row>
+			<columns class="header-olsprops show-for-large" large="3">
+				<p><span>Free</span> Shipping.</p>
+				<p><span>Free</span> Exchanges.</p>
+				<p><span>365-Day</span> Returns.</p>
+			</columns>
+			<columns small="12" large="6" class="header-logo">
+				<a href="http://onlineshoes.com">
+					<img class="text-center" alt="OnlineShoes.com" src="http://s.onlineshoes.com/emails/ols/email-header-ols-logo_360.png"/>
+				</a>
+			</columns>
+			<columns class="show-for-large" large="3">&nbsp;</columns>
+		</row>
+	{{/ifequal}}
+	{{#ifequal site 'sme' }}
+		<row>
+			<columns small="12" class="header-logo">
+				<a href="http://shoeme.ca">
+					<img class="text-center" alt="SHOEme.ca" src="http://s.onlineshoes.com/emails/sm/email-header-sme-logo_360.png"/>
+				</a>
+			</columns>
+		</row>
+	{{/ifequal}}
+	<spacer class="show-for-large" size="16"></spacer>
+	<hr/>
+	<row>
+		<columns class="header-nav">
+			<center>
+				{{#ifequal site 'sdc' }}
+					<menu class="text-center">
+						<item href="http://www.shoes.com/womens-shoes-list2_ct1/1/60">Women</item>
+						<item href="http://www.shoes.com/mens-shoes-list2_ct1/1/60">Men</item>
+						<item class="show-for-large" href="http://www.shoes.com/shoes-child-list2_ct1,ag2/1/60">Kids</item>
+						<item class="show-for-large" href="http://www.shoes.com/brands">Brands</item>
+						<item class="show-for-large" href="http://www.shoes.com/shoes-list2_ct1/1/60/newest">New</item>
+						<item href="http://www.shoes.com/sale-list2_bb/1/60">Sale</item>
+					</menu>
+				{{/ifequal}}
+				{{#ifequal site 'ols' }}
+					<menu class="text-center">
+						<item href="http://www.onlineshoes.com/womens-shoes-list_ct1/1/60">Women</item>
+						<item href="http://www.onlineshoes.com/mens-shoes-list_ct1/1/60">Men</item>
+						<item class="show-for-large" href="http://www.onlineshoes.com/shoes-child-list_ct1,ag2/1/60">Kids</item>
+						<item class="show-for-large" href="http://www.onlineshoes.com/shoes-special-sizes-list_ct1,sc811/1/60">Wide &amp; Narrow</item>
+						<item class="show-for-large" href="http://www.onlineshoes.com/brands">Brands</item>
+						<item href="http://www.onlineshoes.com/sale-list_bb/1/60">Sale</item>
+					</menu>
+				{{/ifequal}}
+				{{#ifequal site 'sme' }}
+					<menu class="text-center">
+						<item href="http://www.shoeme.ca/pages/womens-footwear">Women</item>
+						<item href="http://www.shoeme.ca/pages/mens-footwear">Men</item>
+						<item class="show-for-large" href="http://www.shoeme.ca/pages/kids-footwear">Kids</item>
+						<item class="show-for-large" href="http://www.shoeme.ca/pages/brands">Brands</item>
+						<item href="http://www.shoeme.ca/collections/sale">Sale</item>
+					</menu>
+				{{/ifequal}}
+			</center>
+		</columns>
+	</row>
+</container>
